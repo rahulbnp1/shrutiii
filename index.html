@@ -1,0 +1,431 @@
+<html lang="en"><head>
+<meta charset="utf-8"></head><body>﻿
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebrate Rose Day with a beautiful interactive experience. Send virtual roses, create personalized messages, and spread the love!">
+    <title>🌹 Rose Day Special - February 7th</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor">🌹</div>
+
+    <!-- Floating Petals Background -->
+    <div class="petals-container" id="petals-container"></div>
+
+    <!-- Ambient Glow -->
+    <div class="ambient-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="rose-icon">🌹</span>
+            <span class="brand-text">Helooo Shrutiii</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#garden" class="nav-link">Rose Garden</a>
+            <a href="#message" class="nav-link">Send Love</a>
+            <a href="#meanings" class="nav-link">Rose Meanings</a>
+
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-date">February 7th, 2026</p>
+            <h1 class="hero-title">
+                <span class="title-line">Happy</span>
+                <span class="title-line accent">Rose Day</span>
+            </h1>
+            <p class="hero-subtitle">Express your love with the timeless beauty of roses</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="scrollToSection('garden')">
+                    <span>Explore Roses</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('message')">
+                    <span>Send a Rose</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-rose-container">
+            <div class="hero-rose-gif" id="hero-rose">
+                <img src="images/flower.gif" alt="Cute cat with rose - Love You!" class="rose-gif-image">
+                <div class="gif-glow"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Interactive Rose Garden -->
+    <section id="garden" class="garden-section">
+        <div class="section-header">
+            <h2 class="section-title">Interactive Rose Garden</h2>
+            <p class="section-subtitle">Click on any rose to watch it bloom and reveal its meaning</p>
+        </div>
+        <div class="garden-grid">
+            <div class="rose-card" data-color="red" data-meaning="Deep Love & Passion">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-red">🌹</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Red Rose</h3>
+                    <p class="rose-meaning">Deep Love & Passion</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="pink" data-meaning="Grace & Gratitude">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-pink">🌹</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Pink Rose</h3>
+                    <p class="rose-meaning">Grace & Gratitude</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="white" data-meaning="Purity & Innocence">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-white">🌹</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>White Rose</h3>
+                    <p class="rose-meaning">Purity & Innocence</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="yellow" data-meaning="Friendship & Joy">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-yellow">🌹</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Yellow Rose</h3>
+                    <p class="rose-meaning">Friendship & Joy</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="lavender" data-meaning="Enchantment & Mystery">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-lavender">🌹</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Lavender Rose</h3>
+                    <p class="rose-meaning">Enchantment & Mystery</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="orange" data-meaning="Desire & Enthusiasm">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-orange">🌹</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Orange Rose</h3>
+                    <p class="rose-meaning">Desire & Enthusiasm</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <h2 class="section-title">Who needs roses????</h2>
+            <p class="section-subtitle">when she herself is a rose 🌹</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="images/p7.jpeg" alt="Rose Memory 1">
+                </div>
+                <p class="gallery-caption-text">A smile that blooms like a rose 🌹</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="images/p1.jpg" alt="Rose Memory 2">
+                </div>
+                <p class="gallery-caption-text">Soft, simple, and endlessly beautiful</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="images/p2.jpeg" alt="Rose Memory 3">
+                </div>
+                <p class="gallery-caption-text">Every picture tells her story</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="images/r4.jpeg" alt="Rose Memory 4">
+                </div>
+                <p class="gallery-caption-text">Not a rose, but the reason roses exist 🌹</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Send Love Message Section -->
+    <section id="message" class="message-section">
+        <div class="message-container">
+            <div class="message-left">
+                <h2 class="section-title">Send a Virtual Rose</h2>
+                <p class="section-subtitle">Create a personalized rose message for your special someone</p>
+
+                <form class="rose-form" id="rose-form">
+                    <div class="form-group">
+                        <label for="recipient-name">Recipient's Name</label>
+                        <input type="text" id="recipient-name" placeholder="Enter their name..." required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="sender-name">Your Name</label>
+                        <input type="text" id="sender-name" placeholder="Enter your name..." required="">
+                    </div>
+                    <div class="form-group">
+                        <label>Choose a Rose</label>
+                        <div class="rose-selector">
+                            <button type="button" class="rose-option selected" data-rose="red"><span class="colored-rose rose-red">🌹</span></button>
+                            <button type="button" class="rose-option" data-rose="pink"><span class="colored-rose rose-pink">🌹</span></button>
+                            <button type="button" class="rose-option" data-rose="white"><span class="colored-rose rose-white">🌹</span></button>
+                            <button type="button" class="rose-option" data-rose="yellow"><span class="colored-rose rose-yellow">🌹</span></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="love-message">Your Message</label>
+                        <textarea id="love-message" placeholder="Write your heartfelt message..." rows="4" required=""></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Create Rose Card</span>
+                        <span class="btn-sparkle">✨</span>
+                    </button>
+                </form>
+            </div>
+            <div class="message-right">
+                <div class="preview-card" id="preview-card">
+                    <div class="preview-header">
+                        <span class="preview-badge">Preview</span>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-rose" id="preview-rose"><span class="colored-rose rose-red">🌹</span>
+                        </div>
+                        <h3 class="preview-recipient">Dear <span id="preview-name">Someone Special</span></h3>
+                        <p class="preview-message" id="preview-message">Your beautiful message will appear here...</p>
+                        <div class="preview-footer">
+                            <span>With love,</span>
+                            <span class="preview-sender" id="preview-sender">You</span>
+                        </div>
+                    </div>
+                    <div class="preview-decoration">
+                        <div class="corner-rose top-left">🌹</div>
+                        <div class="corner-rose top-right">🌹</div>
+                        <div class="corner-rose bottom-left">🌹</div>
+                        <div class="corner-rose bottom-right">🌹</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rose Meanings Section -->
+    <section id="meanings" class="meanings-section">
+        <div class="section-header">
+            <h2 class="section-title">The Language of Roses</h2>
+            <p class="section-subtitle">Every color tells a different story of love</p>
+        </div>
+        <div class="meanings-timeline">
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon red"><span class="colored-rose rose-red">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Red Rose</h3>
+                    <p>The classic symbol of deep love, passion, and romance. It whispers "I love you" without words.
+                    </p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon pink"><span class="colored-rose rose-pink">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Pink Rose</h3>
+                    <p>Represents grace, gratitude, and admiration. Perfect for expressing appreciation and gentle
+                        emotions.</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon white"><span class="colored-rose rose-white">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>White Rose</h3>
+                    <p>Symbolizes purity, innocence, and new beginnings. Often used in weddings and new relationships.
+                    </p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon yellow"><span class="colored-rose rose-yellow">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Yellow Rose</h3>
+                    <p>Represents friendship, joy, and caring. The perfect way to brighten someone's day.</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon lavender"><span class="colored-rose rose-lavender">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Lavender Rose</h3>
+                    <p>Conveys enchantment and love at first sight. A mysterious and magical choice.</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon orange"><span class="colored-rose rose-orange">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Orange Rose</h3>
+                    <p>Expresses desire, enthusiasm, and excitement. For passionate and energetic love.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Bouquet Builder -->
+    <section id="bouquet" class="bouquet-section">
+        <div class="section-header">
+            <h2 class="section-title">Build Your Bouquet</h2>
+            <p class="section-subtitle">Create a virtual arrangement to express your feelings</p>
+        </div>
+        <div class="bouquet-builder">
+            <div class="bouquet-display">
+                <div class="bouquet-container-inner">
+                    <!-- Paper Wrapper (Back Layer) -->
+
+
+                    <!-- Roses Container -->
+                    <div class="bouquet-roses" id="bouquet-roses">
+                        <p class="bouquet-hint">Add roses to build your bouquet...</p>
+                    </div>
+
+                    <!-- Leaves Decoration -->
+                    <div class="bouquet-leaves-decoration"></div>
+
+                    <!-- Paper Wrapper (Front/Fold Layer) -->
+                    <div class="bouquet-paper-front"></div>
+
+                    <!-- Ribbon -->
+                    <div class="bouquet-ribbon">
+                        <div class="ribbon-knot"></div>
+                        <div class="ribbon-tail left"></div>
+                        <div class="ribbon-tail right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bouquet-controls">
+                <div class="bouquet-options">
+                    <button class="bouquet-rose-btn" data-rose="red" title="Add Red Rose">
+                        <span class="colored-rose rose-red">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="pink" title="Add Pink Rose">
+                        <span class="colored-rose rose-pink">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="white" title="Add White Rose">
+                        <span class="colored-rose rose-white">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="yellow" title="Add Yellow Rose">
+                        <span class="colored-rose rose-yellow">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="lavender" title="Add Lavender Rose">
+                        <span class="colored-rose rose-lavender">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="orange" title="Add Orange Rose">
+                        <span class="colored-rose rose-orange">🌹</span>
+                    </button>
+                </div>
+                <div class="bouquet-actions" style="margin-top: 1.5rem; text-align: center;">
+                    <button class="btn btn-secondary" id="clear-bouquet">
+                        <span>Clear Vase</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="countdown-container">
+            <h2 class="countdown-title">Rose Day is Coming!</h2>
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            <p class="countdown-message">Prepare your roses and spread the love! 🌹</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-rose">🌹</div>
+            <p class="footer-text">Made with love by Rahul for Shruti 🌹</p>
+            <p class="footer-quote">"A single rose can be my garden... a single friend, my world." - Leo Buscaglia</p>
+        </div>
+        <div class="footer-petals"></div>
+    </footer>
+
+    <!-- Rose Card Modal -->
+    <div class="modal" id="rose-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">�</button>
+            <div class="rose-card-final" id="final-card">
+                <!-- Generated card will appear here -->
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="download-card">
+                    <span>Download Card</span>
+                </button>
+                <button class="btn btn-secondary" id="share-card">
+                    <span>Share</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+</body></html>
